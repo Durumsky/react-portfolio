@@ -19,7 +19,7 @@ const HeaderSection = () => {
         <HeaderH1>Full-stack Web Developer</HeaderH1>
         <HeaderP>Are you a company looking for an enthusiastic junior react developer?</HeaderP>
         <HeaderBtnWrapper>
-          <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
+          <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
             Contact me {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeaderBtnWrapper>
