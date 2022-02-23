@@ -7,7 +7,7 @@ import { ProjectsContainer, ProjectsH1, ProjectsH2, ProjectsWrapper, ProjectsCar
 
 const projects = () => {
   return (
-    <ProjectsContainer id ="projects">
+    <ProjectsContainer id ="contact">
         <ProjectsH1>Some of my projects</ProjectsH1>
         <ProjectsWrapper>
             <ProjectsCard> 

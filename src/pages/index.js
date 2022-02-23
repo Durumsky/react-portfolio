@@ -2,16 +2,48 @@ import React, { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/navbar";
 import HeaderSection from "../components/HeaderSection";
-import InfoSection from "../components/infoSection"
-import { homeObjOne, homeObjTwo, homeObjThree } from "../components/infoSection/Data"
-import Projects from '../components/projects'
-import Footer from '../components/footer'
+import InfoSection from "../components/infoSection";
+import {
+  homeObjThree,
+  projects,
+  education,
+} from "../components/infoSection/Data";
+import Projects from "../components/projects";
+import Footer from "../components/footer";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [counterProjects, setCounterProjects] = useState(0);
+  const [counterEducation, setCounterEducation] = useState(0);
 
   const toggle = () => {
     setIsOpen(!isOpen);
+  };
+
+  const projectsSliderNext = () => {
+    counterProjects < projects.length - 1
+      ? setCounterProjects(() => counterProjects + 1)
+      : setCounterProjects(() => 0);
+  };
+
+  const projectsSliderPrev = () => {
+    counterProjects > 0
+      ? setCounterProjects(() => counterProjects - 1)
+      : setCounterProjects(() => 2);
+    console.log(counterProjects);
+  };
+
+  const educationSliderNext = () => {
+    counterEducation < education.length - 1
+      ? setCounterEducation(() => counterEducation + 1)
+      : setCounterEducation(() => 0);
+  };
+
+  const educationSliderPrev = () => {
+    counterEducation > 0
+      ? setCounterEducation(() => counterEducation - 1)
+      : setCounterEducation(() => 2);
+    console.log(counterEducation);
   };
 
   return (
@@ -19,12 +51,19 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeaderSection />
-      <InfoSection {...homeObjOne}/>
-      <InfoSection {...homeObjTwo}/>
-      <InfoSection {...homeObjThree}/>
+      <InfoSection
+        {...projects[counterProjects]}
+        projectsSliderNext={projectsSliderNext}
+        projectsSliderPrev={projectsSliderPrev}
+      />
+      <InfoSection 
+         {...education[counterEducation]}
+        educationSliderNext={educationSliderNext}
+        educationSliderPrev={educationSliderPrev}
+      />
+      <InfoSection {...homeObjThree} />
       <Projects />
       <Footer />
-
     </>
   );
 };

@@ -7,7 +7,7 @@ export const HeaderContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 800px;
+    height: 100vh;
     position: relative;
     z-index: 1;
 
@@ -73,6 +73,7 @@ export const HeaderP = styled.p`
     font-size: 24px;
     text-align: center;
     max-width: 600px;
+    font-weight: bold;
 
     @media screen and (max-width: 768px){
         font-size: 24px;
