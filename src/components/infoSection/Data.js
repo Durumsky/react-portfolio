@@ -23,7 +23,8 @@ export const projects = [
     lightTextDesc: false,
     topLine: "Projects",
     headline: "Card-Game challenge",
-    description: `The react app fetches players data from a mockup backend and creates an overview of cards showing information of each player. If a card is selected, the card gets a red border and the info from the card is displayed in the details-box. From the control panel, it is possible to sort the cards (ascending and descending). Also is possible to submit the selected player and send its info-details to the mocked server.`,
+    description: `The react app fetches players data from a mockup backend and creates an overview of cards showing information of each player. If a card is selected, the card gets a red border and the info from the card is displayed in the details-box.
+    \nFrom the control panel, it is possible to sort the cards (ascending and descending). Also is possible to submit the selected player and send its info-details to the mocked server.`,
     buttonLabel: "Github",
     imgStart: false,
     img: require("../../images/card-game.png"),
