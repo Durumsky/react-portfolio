@@ -15,6 +15,7 @@ import {
   BtnWrap,
   ImgWrap,
   Img,
+  GitIcon
 } from "./InfoElements";
 import { Button } from "../ButtonElement";
 
@@ -37,6 +38,7 @@ const infoSection = ({
   projectsSliderPrev,
   educationSliderNext,
   educationSliderPrev,
+  githubLink
 }) => {
   return (
     <>
@@ -52,7 +54,11 @@ const infoSection = ({
                   <Heading lightText={lightText}>{headline}</Heading>
                   <Subtitle darkText={darkText}>{description}</Subtitle>  
                 </TextWrapper>
+                
                 <BtnWrap>
+                    {id === 'projects' && 
+                    <Button>Github <GitIcon/></Button>
+                    }
                     <Button
                       to="home"
                       smooth={true}

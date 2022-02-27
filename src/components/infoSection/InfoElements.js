@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
+import { BsGithub } from "react-icons/bs"
 
 export const InfoContainer = styled.div`
   color: #fff;
@@ -137,3 +138,10 @@ export const SlidePrev = styled(MdKeyboardArrowLeft)`
     background: ${({ primary }) => (primary ? "#fff" : "#3FB5CA")};
   }
 `;
+
+export const GitIcon = styled(BsGithub)`
+  font-weight: bold;
+  min-width: 30px;
+  margin-left: 5px;
+  font-size: 30px;
+`

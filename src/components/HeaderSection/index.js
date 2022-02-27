@@ -28,7 +28,7 @@ const HeaderSection = () => {
       <HeaderContent>
         <HeaderH1>Full-stack Web Developer</HeaderH1>
         <HeaderP>
-          Are you a company looking for an enthusiastic junior react developer?
+          Are you a company looking for an enthusiastic junior developer?
         </HeaderP>
         <HeaderBtnWrapper>
           <Button

@@ -1,3 +1,6 @@
+import {GitIcon, SlidePrev} from './InfoElements'
+import { BsGithub } from "react-icons/bs"
+
 export const projects = [
   {
     id: "projects",
@@ -7,10 +10,13 @@ export const projects = [
     topLine: "Projects",
     headline: "This Website",
     description:
-      "This website was created as a showcase or portfolio using mainly React and Styled Components — and of course Javascript, HTML and CSS",
-    buttonLabel: "Github",
+      `I created this website as a showcase of my skills and potential.
+
+React | Styled-Components | Javascript `,
+    buttonLabel:  `Code:` && < BsGithub />,
+    githubLink: "",
     imgStart: false,
-    img: require("../../images/undraw-hacker-mind-6-y85.svg").default,
+    img: require("../../images/portfolio.png"),
     alt: "Ironhack logo",
     dark: false,
     primary: false,
@@ -26,6 +32,7 @@ export const projects = [
     description: `The react app fetches players data from a mockup backend and creates an overview of cards showing information of each player. If a card is selected, the card gets a red border and the info from the card is displayed in the details-box.
     \nFrom the control panel, it is possible to sort the cards (ascending and descending). Also is possible to submit the selected player and send its info-details to the mocked server.`,
     buttonLabel: "Github",
+    githubLink: "",
     imgStart: false,
     img: require("../../images/card-game.png"),
     alt: "Challenge to show react skills",
@@ -43,6 +50,7 @@ export const projects = [
     description:
       "App created with React, Express, Node and MogoDB which tracks the state of relationships and provides insights to improve them",
     buttonLabel: "Github",
+    githubLink: "",
     imgStart: false,
     img: require("../../images/undraw_progressive_app_m-9-ms.svg").default,
     alt: "Ironhack logo",
