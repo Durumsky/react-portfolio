@@ -1,11 +1,23 @@
 import styled from "styled-components";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
-import { BsGithub } from "react-icons/bs"
+import { BsGithub } from "react-icons/bs";
+import { FiExternalLink } from "react-icons/fi";
 
 export const InfoContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    padding: 100px 0;
+  }
+`;
+
+export const InfoContainerContact = styled.div`
+  color: #fff;
+  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
+  height: 100%;
   display: flex;
   justify-content: center;
   @media screen and (min-width: 768px) {
@@ -77,9 +89,18 @@ export const Heading = styled.h1`
     font-size: 23px;
   }
 `;
+export const Heading2 = styled.h1`
+  margin-bottom: 24px;
+  margin-top: 24px;
+  font-size: 23px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+
+`;
 
 export const Subtitle = styled.p`
-  max-width: 440px;
+  /* max-width: 440px; */
   white-space: pre-wrap;
   font-size: 18px;
   line-height: 22px;
@@ -98,8 +119,11 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
   width: 100%;
-  margin: 0 0 10px 10px;
-  padding-right: 0;
+  padding-right: ${({ imgStart }) =>
+    imgStart ? '15px' : '0'};
+  padding-left: ${({ imgStart }) =>
+    imgStart ? '0' : '15px'};
+  ;
 `;
 
 export const SliderWrapper = styled.div`
@@ -112,11 +136,12 @@ export const SliderWrapper = styled.div`
 export const SlideNext = styled(MdKeyboardArrowRight)`
   font-weight: bold;
   min-width: 30px;
-  margin-left:4%;
+  margin-left: 4%;
   border-radius: 50%;
   background: ${({ primary }) => (primary ? "#3FB5CA" : "#010606")};
   color: ${({ dark }) => (dark ? "#010606" : "#fff")};
   font-size: 30px;
+  cursor: pointer;
 
   &:hover {
     transition: all 0.2s ease-in-out;
@@ -127,11 +152,12 @@ export const SlideNext = styled(MdKeyboardArrowRight)`
 export const SlidePrev = styled(MdKeyboardArrowLeft)`
   font-weight: bold;
   min-width: 30px;
-  margin-right:4%;
+  margin-right: 4%;
   border-radius: 50%;
   background: ${({ primary }) => (primary ? "#3FB5CA" : "#010606")};
   color: ${({ dark }) => (dark ? "#010606" : "#fff")};
   font-size: 30px;
+  cursor: pointer;
 
   &:hover {
     transition: all 0.2s ease-in-out;
@@ -143,5 +169,16 @@ export const GitIcon = styled(BsGithub)`
   font-weight: bold;
   min-width: 30px;
   margin-left: 5px;
-  font-size: 30px;
-`
+  font-size: 25px;
+`;
+
+export const ExtIcon = styled(FiExternalLink)`
+  font-weight: bold;
+  min-width: 30px;
+  margin-left: 5px;
+  font-size: 25px;
+`;
+
+
+
+

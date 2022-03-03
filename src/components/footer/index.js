@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <FooterContainer>
         <FooterWrap>
-            <FooterLinksContainer>
+            {/* <FooterLinksContainer>
                 <FooterLinksWrapper>
                     <FooterLinkItems>
                         <FooterLinkTitle>About me</FooterLinkTitle>
@@ -49,7 +49,7 @@ const Footer = () => {
                             <FooterLink to="/contact">Another contact me</FooterLink>
                     </FooterLinkItems>
                 </FooterLinksWrapper>
-            </FooterLinksContainer>
+            </FooterLinksContainer> */}
             <SocialMedia> 
                 <SocialMediaWrap> 
                     <SocialLogo to='/' onClick={toggleHome}>
@@ -57,7 +57,10 @@ const Footer = () => {
                     </SocialLogo>
                     <WebsiteRights>José Escobedo © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                     <SocialIcons>
-                        <SocialIconLink href="#" target="_blank" aria-label="LinkedIn">
+                        <SocialIconLink href="https://www.linkedin.com/in/jose-escobedo-bermudez" target="_blank" aria-label="LinkedIn">
+                            <FaLinkedin />
+                        </SocialIconLink>
+                        {/* <SocialIconLink href="#" target="_blank" aria-label="LinkedIn">
                             <FaLinkedin />
                         </SocialIconLink>
                         <SocialIconLink href="#" target="_blank" aria-label="LinkedIn">
@@ -65,10 +68,7 @@ const Footer = () => {
                         </SocialIconLink>
                         <SocialIconLink href="#" target="_blank" aria-label="LinkedIn">
                             <FaLinkedin />
-                        </SocialIconLink>
-                        <SocialIconLink href="#" target="_blank" aria-label="LinkedIn">
-                            <FaLinkedin />
-                        </SocialIconLink>l
+                        </SocialIconLink> */}
                     </SocialIcons>
                 </SocialMediaWrap>
             </SocialMedia>

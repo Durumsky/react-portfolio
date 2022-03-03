@@ -15,9 +15,10 @@ import {
   BtnWrap,
   ImgWrap,
   Img,
-  GitIcon
+  GitIcon,
+  ExtIcon,
 } from "./InfoElements";
-import { Button } from "../ButtonElement";
+import { Button, ButtonExt } from "../Buttons";
 
 const infoSection = ({
   lightBg,
@@ -38,51 +39,79 @@ const infoSection = ({
   projectsSliderPrev,
   educationSliderNext,
   educationSliderPrev,
-  githubLink
+  github,
+  githubLink,
+  deploy,
+  deployLink,
+  certificate,
+  certificateLink,
 }) => {
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
         <SliderWrapper>
-          {id === 'projects' && <SlidePrev primary={primary} dark={dark} onClick={()=> projectsSliderPrev()}/>}
-          {id === 'education' && <SlidePrev primary={primary} dark={dark} onClick={()=> educationSliderPrev()}/>}
+          {id === "projects" && (
+            <SlidePrev
+              primary={primary}
+              dark={dark}
+              onClick={() => projectsSliderPrev()}
+            />
+          )}
+          {id === "education" && (
+            <SlidePrev
+              primary={primary}
+              dark={dark}
+              onClick={() => educationSliderPrev()}
+            />
+          )}
           <InfoWrapper>
             <InfoRow imgStart={imgStart}>
               <Column1>
                 <TextWrapper>
                   <TopLine>{topLine}</TopLine>
                   <Heading lightText={lightText}>{headline}</Heading>
-                  <Subtitle darkText={darkText}>{description}</Subtitle>  
+                  <Subtitle darkText={darkText}>{description}</Subtitle>
                 </TextWrapper>
-                
+
                 <BtnWrap>
-                    {id === 'projects' && 
-                    <Button>Github <GitIcon/></Button>
-                    }
-                    <Button
-                      to="home"
-                      smooth={true}
-                      duration={500}
-                      spy={true}
-                      exact={true}
-                      offset={-80}
-                      primary={primary ? 1 : 0}
-                      dark={dark ? 1 : 0}
-                      dark2={dark2 ? 1 : 0}
-                    >
-                      {buttonLabel}
-                    </Button>
-                  </BtnWrap>
+                  {github && (
+                    <ButtonExt href={githubLink} target="_blank" primary={primary} dark={dark}>
+                      Github <GitIcon />
+                    </ButtonExt>
+                  )}
+                  {deploy && (
+                    <ButtonExt href={deployLink} target="_blank" primary={primary} dark={dark}>
+                      Visit <ExtIcon />
+                    </ButtonExt>
+                  )}
+                  {certificate && (
+                    <ButtonExt href={certificateLink} target="_blank" primary={primary} dark={dark}>
+                      Certificate <ExtIcon />
+                    </ButtonExt>
+                  )}
+                </BtnWrap>
               </Column1>
               <Column2>
                 <ImgWrap>
-                  <Img src={img} alt={alt} />
+                  <Img src={img} alt={alt} imgStart={imgStart} />
                 </ImgWrap>
               </Column2>
             </InfoRow>
           </InfoWrapper>
-          {id === 'projects' && <SlideNext primary={primary} dark={dark} onClick={()=> projectsSliderNext()} />}
-          {id === 'education' && <SlideNext primary={primary} dark={dark} onClick={()=> educationSliderNext()} />}
+          {id === "projects" && (
+            <SlideNext
+              primary={primary}
+              dark={dark}
+              onClick={() => projectsSliderNext()}
+            />
+          )}
+          {id === "education" && (
+            <SlideNext
+              primary={primary}
+              dark={dark}
+              onClick={() => educationSliderNext()}
+            />
+          )}
         </SliderWrapper>
       </InfoContainer>
     </>

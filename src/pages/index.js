@@ -3,12 +3,9 @@ import Sidebar from "../components/Sidebar";
 import Navbar from "../components/navbar";
 import HeaderSection from "../components/HeaderSection";
 import InfoSection from "../components/infoSection";
-import {
-  homeObjThree,
-  projects,
-  education,
-} from "../components/infoSection/Data";
-import Projects from "../components/projects";
+import AboutMe from "../components/infoSection/AboutMe";
+import { projects, education, aboutMe, contact } from "../components/infoSection/Data";
+import Contact from "../components/infoSection/Contact";
 import Footer from "../components/footer";
 
 const Home = () => {
@@ -56,13 +53,13 @@ const Home = () => {
         projectsSliderNext={projectsSliderNext}
         projectsSliderPrev={projectsSliderPrev}
       />
-      <InfoSection 
-         {...education[counterEducation]}
+      <InfoSection
+        {...education[counterEducation]}
         educationSliderNext={educationSliderNext}
         educationSliderPrev={educationSliderPrev}
       />
-      <InfoSection {...homeObjThree} />
-      <Projects />
+      <AboutMe {...aboutMe} />
+      <Contact {...contact}/>
       <Footer />
     </>
   );

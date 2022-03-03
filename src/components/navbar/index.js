@@ -83,13 +83,25 @@ const Navbar = ({ toggle }) => {
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavExtLink href="https://mega.nz/file/HpVDyCRT#Iyg7WUiyPdjjI5BUgRWVKdr1Z1yms9oJpLIqxVW4ABk" target="_blank">
+                <NavExtLink
+                  href="https://mega.nz/file/HpVDyCRT#Iyg7WUiyPdjjI5BUgRWVKdr1Z1yms9oJpLIqxVW4ABk"
+                  target="_blank"
+                >
                   CV
                 </NavExtLink>
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to="/contact">Write me!</NavBtnLink>
+              <NavBtnLink
+                to="contact"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Write me!
+              </NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>

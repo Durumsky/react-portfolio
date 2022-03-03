@@ -66,12 +66,30 @@ export const SidebarLink = styled(LinkScroll)`
     }
 `
 
+export const SidebarLinkExt = styled.a`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+        color: #3FB5CA;
+        transition: 0.2s ease-in-out;
+    }
+`
+
 export const SideBtnWrap = styled.div`
     display: flex;
     justify-content: center;
 `
 
-export const SidebarRoute = styled(LinkRouter)`
+export const SidebarRoute = styled(LinkScroll)`
     border-radius: 50px;
     background: #3FB5CA;
     white-space: nowrap;

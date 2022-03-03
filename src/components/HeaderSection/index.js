@@ -11,7 +11,7 @@ import {
   ArrowForward,
   ArrowRight,
 } from "./HeaderSectionElements";
-import { Button } from "../ButtonElement";
+import { Button } from "../Buttons";
 
 const HeaderSection = () => {
   const [hover, setHover] = useState(false);
