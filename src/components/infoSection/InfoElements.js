@@ -12,6 +12,9 @@ export const InfoContainer = styled.div`
   @media screen and (min-width: 768px) {
     padding: 100px 0;
   }
+  @media screen and (max-width: 480px) {
+    height: 100%;
+  }
 `;
 
 export const InfoContainerContact = styled.div`
@@ -23,6 +26,9 @@ export const InfoContainerContact = styled.div`
   align-items: center;
   @media screen and (min-width: 768px) {
     padding: 100px 0;
+  }
+  @media screen and (max-width: 480px) {
+    height: 100%;
   }
 `;
 
@@ -36,6 +42,9 @@ export const InfoContainerAbout = styled.div`
   @media screen and (min-width: 768px) {
     padding: 100px 0;
   }
+  @media screen and (max-width: 480px) {
+    height: 100%;
+  }
 `;
 
 export const InfoWrapper = styled.div`
@@ -48,6 +57,11 @@ export const InfoWrapper = styled.div`
   margin-left: auto;
   //padding: 0 24px;
   justify-content: center;
+
+  @media screen and (max-width: 480px) {
+    padding: 80px 0;
+    height: 100%;
+  }
 `;
 
 export const InfoWrapperAbout = styled.div`
@@ -60,11 +74,15 @@ export const InfoWrapperAbout = styled.div`
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
-  /* align-items:center; */
+  
+  @media screen and (max-width: 480px) {
+    margin: 80px 25px;
+    height: 100%;
+  }
 `;
 export const InfoWrapperContact = styled.div`
   display: flex;
-  z-index: 1;
+  /* z-index: 1; */
   height: 100%;
   width: 100%;
   max-width: 1100px;
@@ -73,6 +91,11 @@ export const InfoWrapperContact = styled.div`
   padding: 0 24px;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 480px) {
+    margin: 80px 25px;
+    height: 100%;
+  }
 `;
 
 export const InfoRow = styled.div`
