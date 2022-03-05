@@ -14,6 +14,7 @@ export const InfoContainer = styled.div`
   }
   @media screen and (max-width: 480px) {
     height: 100%;
+    padding: 50px 0;
   }
 `;
 
@@ -28,7 +29,8 @@ export const InfoContainerContact = styled.div`
     padding: 100px 0;
   }
   @media screen and (max-width: 480px) {
-    height: 100%;
+    height: 100vh;
+    padding: 50px 0;
   }
 `;
 
@@ -44,6 +46,7 @@ export const InfoContainerAbout = styled.div`
   }
   @media screen and (max-width: 480px) {
     height: 100%;
+    padding: 50px 0;
   }
 `;
 

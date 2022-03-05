@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.ace9898c.css",
-    "main.js": "/react-portfolio/static/js/main.8eb5fea8.js",
-    "static/media/video.mp4": "/react-portfolio/static/media/video.c60f6083f6156eb3a0e7.mp4",
-    "static/media/portfolio.png": "/react-portfolio/static/media/portfolio.0fc8318350c944a81a47.png",
-    "static/media/reminiscence.png": "/react-portfolio/static/media/reminiscence.8fe96c0ea469e24e3d11.png",
-    "static/media/katas.png": "/react-portfolio/static/media/katas.271a1e1d4f9f67e02f49.png",
-    "static/media/card-game.png": "/react-portfolio/static/media/card-game.8b9623bc5ec78dca64ae.png",
-    "static/media/about.jpg": "/react-portfolio/static/media/about.5343452903bd84ee81ed.jpg",
-    "static/media/minimalfin.png": "/react-portfolio/static/media/minimalfin.906d393b06c3eaebb4ad.png",
-    "static/media/tada-login.png": "/react-portfolio/static/media/tada-login.dae57df708334feb68b4.png",
-    "static/media/ztm.png": "/react-portfolio/static/media/ztm.ec1384ef931a8108b6dc.png",
-    "static/media/ironhack.png": "/react-portfolio/static/media/ironhack.e473ec16830fbf16f545.png",
-    "static/media/undraw_mathematics_-4-otb.svg": "/react-portfolio/static/media/undraw_mathematics_-4-otb.d0d31a39c193ee6d7cad6103530ea95f.svg",
-    "index.html": "/react-portfolio/index.html",
-    "main.ace9898c.css.map": "/react-portfolio/static/css/main.ace9898c.css.map",
-    "main.8eb5fea8.js.map": "/react-portfolio/static/js/main.8eb5fea8.js.map"
+    "main.css": "/static/css/main.ace9898c.css",
+    "main.js": "/static/js/main.d0d7ba73.js",
+    "static/media/video.mp4": "/static/media/video.c60f6083f6156eb3a0e7.mp4",
+    "static/media/portfolio.png": "/static/media/portfolio.0fc8318350c944a81a47.png",
+    "static/media/reminiscence.png": "/static/media/reminiscence.8fe96c0ea469e24e3d11.png",
+    "static/media/katas.png": "/static/media/katas.271a1e1d4f9f67e02f49.png",
+    "static/media/card-game.png": "/static/media/card-game.8b9623bc5ec78dca64ae.png",
+    "static/media/about.jpg": "/static/media/about.5343452903bd84ee81ed.jpg",
+    "static/media/minimalfin.png": "/static/media/minimalfin.906d393b06c3eaebb4ad.png",
+    "static/media/tada-login.png": "/static/media/tada-login.dae57df708334feb68b4.png",
+    "static/media/ztm.png": "/static/media/ztm.ec1384ef931a8108b6dc.png",
+    "static/media/ironhack.png": "/static/media/ironhack.e473ec16830fbf16f545.png",
+    "static/media/undraw_mathematics_-4-otb.svg": "/static/media/undraw_mathematics_-4-otb.d0d31a39c193ee6d7cad6103530ea95f.svg",
+    "index.html": "/index.html",
+    "main.ace9898c.css.map": "/static/css/main.ace9898c.css.map",
+    "main.d0d7ba73.js.map": "/static/js/main.d0d7ba73.js.map"
   },
   "entrypoints": [
     "static/css/main.ace9898c.css",
-    "static/js/main.8eb5fea8.js"
+    "static/js/main.d0d7ba73.js"
   ]
 }
