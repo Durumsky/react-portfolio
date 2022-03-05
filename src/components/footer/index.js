@@ -1,5 +1,5 @@
 import React from 'react'
-import {FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink } from './footerElements'
+import {FooterContainer, FooterWrap, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink } from './footerElements'
 import {FaLinkedin} from 'react-icons/fa'
 import {animateScroll as scroll } from 'react-scroll' 
 
