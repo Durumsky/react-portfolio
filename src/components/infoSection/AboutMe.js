@@ -3,8 +3,8 @@ import {
   SliderWrapper,
   SlidePrev,
   SlideNext,
-  InfoContainer,
-  InfoWrapper,
+  InfoContainerAbout,
+  InfoWrapperAbout,
   InfoRow,
   Column1,
   Column2,
@@ -49,8 +49,8 @@ const AboutMe = ({
 }) => {
   return (
     <>
-      <InfoContainer lightBg={lightBg} id={id}>
-          <InfoWrapper>
+      <InfoContainerAbout lightBg={lightBg} id={id}>
+          <InfoWrapperAbout>
             <InfoRow imgStart={imgStart}>
               <Column1>
                 <TextWrapper>
@@ -75,8 +75,8 @@ const AboutMe = ({
                 </ImgWrap>
               </Column2>
             </InfoRow>
-          </InfoWrapper>
-      </InfoContainer>
+          </InfoWrapperAbout>
+      </InfoContainerAbout>
     </>
   );
 };
