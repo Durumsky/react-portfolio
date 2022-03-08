@@ -247,7 +247,7 @@ export const contact = {
   lightText: false,
   lightTextDesc: false,
   topLine: "E-mail",
-  headline: "info@joseescobedo.com",
+  headline: "info@josescobedo.com",
   description: `I will try to reply you as soon as possible. I am gladly open for coding challenges proposals. 
 `,
   buttonLabel: "Learn more",
